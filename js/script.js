@@ -25,7 +25,7 @@
          //Если обратный отсчет завершен, выводим сообщение
         if (countdownDistance < 0) {
             clearInterval(x);
-            document.getElementById("countdown").innerHTML = "всё разблокировано";
+            document.getElementById("countdown").innerHTML = "2 часа после вайпа данные предметы будут недоступны для получения из корзины!";
         }
 
          //Вычисляем время до перезапуска таймера
@@ -42,6 +42,10 @@
             //location.reload();
         }
     }, 1000);
+
+    {
+        document.getElementById("countdown2").innerHTML = "2 hours after the wipe, these items will not be available for receipt from the cart!";
+    }
 
 //  function changeLanguage(lang) {
 //    if (lang === 'ru') {

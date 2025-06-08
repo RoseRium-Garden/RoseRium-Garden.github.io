@@ -84,9 +84,9 @@ border-width: 1px;
 }
 /* глаавное окно */
 #fh5co-main {
-  max-width: 900px;
+  max-width: 1000px;
   min-height: 700px;
-  margin: 5em auto 5em auto;
+  margin: 0em auto 5em auto;
   position: relative;
   background: rgba(0, 0, 0, 0.87);
   overflow: hidden;
@@ -136,7 +136,7 @@ border-width: 1px;
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -546,7 +546,7 @@ figure {
     min-height: 100%;
     object-fit: cover;
     transform: translate(-50%, -50%);
-    *background-size: cover;
+    background-size: cover;
 }
 
 .intro__content {
@@ -666,7 +666,7 @@ figure {
     color: white;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.9s, transform 0.5s;
+    transition: background-color 1.9s, transform 0.05s;
     cursor: grab;
     flex-direction: column;
   }
@@ -678,15 +678,21 @@ figure {
 }
 
 .language-buttons {
-    display: flex;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    *display: flex;
     position: absolute;
-    gap: 20px;
-    top: -90px;
+    gap: 12px;
+    top: 20px;
     overflow: hidden;
     z-index: 99;
+    *min-width: 7px;
+    *min-height: 40px;
+    transition: all 1.5s cubic-bezier(0.1725, 0.8285, 0.322, 1.2735);
+
     
 }
 .button {
+    font-family: "Source Sans Pro", Arial, sans-serif;
     display: inline-block;
     padding: 15px 30px;
     font-size: 12px;
@@ -699,7 +705,8 @@ figure {
     
 }
 .button:hover {
-    background: linear-gradient(90deg, #7f807e, #cc1515);
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    background: linear-gradient(180deg, #7f807e, #cc1515);
     transform: scale(1.1);
-    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.5s cubic-bezier(1.175, 0.885, 0.32, 1.275);
 }
