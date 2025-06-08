@@ -1,1 +1,1 @@
-# SkillRust.github.io
+[RU] Russia | Vanilla | Skills
