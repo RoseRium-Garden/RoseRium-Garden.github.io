@@ -687,10 +687,23 @@ figure {
     z-index: 99;
     *min-width: 7px;
     *min-height: 40px;
-    transition: all 1.5s cubic-bezier(0.1725, 0.8285, 0.322, 1.2735);
-
-    
+    transition: all 1.5s cubic-bezier(0.1725, 0.8285, 0.322, 1.2735);    
 }
+
+@media (max-width: 768px) {
+  .language-buttons {
+      /* Стили для мобильных устройств */
+      flex-direction: column; /* Изменяем направление на колонку */
+      align-items: center; /* Центрируем элементы */
+      padding: 20px; /* Уменьшаем отступы */
+      max-width: 1000px;
+      max-height: 100px;
+      top: -55px;
+      right: 100px;
+      
+  }
+}
+
 .button {
     font-family: "Source Sans Pro", Arial, sans-serif;
     display: inline-block;
@@ -701,12 +714,21 @@ figure {
     background: linear-gradient(90deg, #743131, #ca1010);
     border-radius: 5px;
     transition: all 0.9s ease;
-    max-width: 90px;
-    
+    max-width: 90px;   
 }
+@media (max-width: 768px) {
+  .button {
+    *width: 100px;
+    text-align: center;
+    padding: 5px 30px;
+  }
+}
+
+
 .button:hover {
     font-family: "Source Sans Pro", Arial, sans-serif;
     background: linear-gradient(180deg, #7f807e, #cc1515);
     transform: scale(1.1);
     transition: all 0.5s cubic-bezier(1.175, 0.885, 0.32, 1.275);
 }
+
